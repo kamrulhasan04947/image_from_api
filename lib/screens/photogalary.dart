@@ -28,7 +28,7 @@ class _PhotoGalaryState extends State<PhotoGalary> {
         appBar: const ApplicationAppBar(title: 'Photo Galary App',),
         body: Container(
           alignment: Alignment.center,
-          padding: const EdgeInsets.only(left: 20, top: 2),
+          padding: const EdgeInsets.only(left: 20, top: 1),
           decoration: const BoxDecoration(
             color: Color.fromRGBO(250, 250, 250, 1),
           ),
@@ -78,7 +78,7 @@ class _PhotoGalaryState extends State<PhotoGalary> {
                 height: 100,
                 decoration:BoxDecoration(
                   image: DecorationImage(
-                    image: NetworkImage(image.url),
+                    image: NetworkImage(image.thumbnailUrl),
                     fit: BoxFit.cover,
                   ),
                 ),
